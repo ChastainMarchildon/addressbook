@@ -1,4 +1,5 @@
 
+
 package addressbook;
 
 import java.util.ArrayList;
@@ -40,6 +41,21 @@ public class ContactList {
       numbers.add(i,number);
       i++;
   } 
+  /**
+   * 
+   * @param index returns the index of the search criteria
+   * @param contact Selects which instance of the ContactList object to use 
+   */
+  public void searchContact(int index,ContactList contact){
+      System.out.println(contact.names.get(index));
+      System.out.println(contact.numbers.get(index));
+      System.out.println(contact.addresses.get(index));
+  }
+  public void deleteContact(int index, ContactList contact){
+       contact.names.remove(index);
+       contact.addresses.remove(index);
+       contact.numbers.remove(index);
+  }
  
   
 }

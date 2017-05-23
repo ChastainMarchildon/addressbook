@@ -1,8 +1,9 @@
 
+
 package addressbook;
 
 /**
- *
+ *  This class is used to define contact information and store it
  * @author Chastain Marchildon
  */
 public class addContact {
